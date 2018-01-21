@@ -1,4 +1,6 @@
-# Maven 
+.class
+
+# Maven
 target/
 
 # IntelliJ Idea
@@ -7,6 +9,6 @@ out/
 
 # Eclipse
 bin/
-.classpath
+.classpathgi
 .project
 
