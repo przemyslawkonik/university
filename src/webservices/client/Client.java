@@ -1,10 +1,10 @@
-package client;
+package webservices.client;
 
-public class WebClient {
+public class Client {
 
     public static void main(String[] args) {
-        WebServerService server = new WebServerService();
-        Echo client = server.getWebServerPort();
+        ServerService server = new ServerService();
+        Echo client = server.getServerPort();
 
         System.out.println(client.reply("Echo"));
         System.out.println(client.add(2, 2));

@@ -1,4 +1,4 @@
-package server;
+package webservices.server;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;

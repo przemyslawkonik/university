@@ -1,9 +1,9 @@
-package server;
+package webservices.server;
 
 import javax.jws.WebService;
 
-@WebService(endpointInterface = "server.Echo")
-public class WebServer implements Echo {
+@WebService(endpointInterface = "webservices.server.Echo")
+public class Server implements Echo {
 
     @Override
     public String reply(String msg) {

@@ -1,5 +1,5 @@
 
-package client;
+package webservices.client;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
@@ -17,7 +17,7 @@ import javax.xml.ws.ResponseWrapper;
  * Generated source version: 2.2
  * 
  */
-@WebService(name = "Echo", targetNamespace = "http://server/")
+@WebService(name = "Echo", targetNamespace = "http://server.asd/")
 @XmlSeeAlso({
     ObjectFactory.class
 })
@@ -32,9 +32,9 @@ public interface Echo {
      */
     @WebMethod
     @WebResult(name = "echoResponse", targetNamespace = "")
-    @RequestWrapper(localName = "reply", targetNamespace = "http://server/", className = "client.Reply")
-    @ResponseWrapper(localName = "replyResponse", targetNamespace = "http://server/", className = "client.ReplyResponse")
-    @Action(input = "http://server/Echo/replyRequest", output = "http://server/Echo/replyResponse")
+    @RequestWrapper(localName = "reply", targetNamespace = "http://server.asd/", className = "webservices.client.Reply")
+    @ResponseWrapper(localName = "replyResponse", targetNamespace = "http://server.asd/", className = "webservices.client.ReplyResponse")
+    @Action(input = "http://server.asd/Echo/replyRequest", output = "http://server.asd/Echo/replyResponse")
     public String reply(
         @WebParam(name = "msg", targetNamespace = "")
         String msg);
@@ -48,9 +48,9 @@ public interface Echo {
      */
     @WebMethod
     @WebResult(name = "addResponse", targetNamespace = "")
-    @RequestWrapper(localName = "add", targetNamespace = "http://server/", className = "client.Add")
-    @ResponseWrapper(localName = "addResponse", targetNamespace = "http://server/", className = "client.AddResponse")
-    @Action(input = "http://server/Echo/addRequest", output = "http://server/Echo/addResponse")
+    @RequestWrapper(localName = "add", targetNamespace = "http://server.asd/", className = "webservices.client.Add")
+    @ResponseWrapper(localName = "addResponse", targetNamespace = "http://server.asd/", className = "webservices.client.AddResponse")
+    @Action(input = "http://server.asd/Echo/addRequest", output = "http://server.asd/Echo/addResponse")
     public int add(
         @WebParam(name = "a", targetNamespace = "")
         int a,
